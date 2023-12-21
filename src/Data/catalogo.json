@@ -1,0 +1,112 @@
+[
+    {
+      "id": 1,
+      "title":"OMNIPLUS",
+      "descripcion": "Suplemento alimenticio a base de Zn, Se, Cu, espirulina, manzanilla, vitaminas hidrosolubles y liposolubles",
+      "precio": 2310,
+      "stock":29,
+      "categorias": "Producto-estrella",
+      "thumbnail":"https://portal.omnilife.com/productos/omniplus-2350430",
+      "images": [
+        "https://portal.omnilife.com/productos/omniplus-2350430"
+      ]
+    },
+    {
+        "id": 2,
+        "title":"CAFETINO",
+        "descripcion": "Suplemento alimenticio a base de Cr y cafeína para aumentar la sensibilidad a la insulina",
+        "precio":1911,
+        "stock":30,
+        "categorias": "Control-de-peso",
+        "thumbnail":"https://portal.omnilife.com/productos/cafezzino-plus-5177432",
+        "images": [
+          "https://portal.omnilife.com/productos/cafezzino-plus-5177432"
+        ]
+      },
+      {
+        "id": 3,
+        "title":"FIBER`N-PLUS",
+        "descripcion": "Suplemento alimenticio a base de fibra de avena para aumentar la motilidad intestinal",
+        "precio":2015,
+        "stock":22,
+        "categorias": "Control-de-peso",
+        "thumbnail":"https://portal.omnilife.com/productos/fibern-plus-supreme-1578400",
+        "images": [
+          "https://portal.omnilife.com/productos/fibern-plus-supreme-1578400"
+        ]
+      },
+      {
+        "id": 4,
+        "title":"TEATINO",
+        "descripcion": "Suplemento alimenticio a base Cr para acelerar la quema de tejido adiposo",
+        "precio":1880,
+        "stock":28,
+        "categorias": "Control-de-peso",
+        "thumbnail":"https://portal.omnilife.com/productos/teatino-limon-3505605",
+        "images": [
+          "https://portal.omnilife.com/productos/teatino-limon-3505605"
+        ]
+      },
+      {
+        "id": 5,
+        "title":"BIOCROS",
+        "descripcion": "Suplemento alimenticio enriquecido en vitaminas del complejo B, cafeina, glicina y taurina",
+        "precio":1614,
+        "stock":79,
+        "categorias": "Energéticos",
+        "thumbnail":"https://portal.omnilife.com/productos/biocros-supreme-2075722",
+        "images": [
+          "https://portal.omnilife.com/productos/biocros-supreme-2075722"
+        ]
+      },
+      {
+        "id": 6,
+        "title":"OMNIBETA",
+        "descripcion": "Suplemento alimenticio líquido a base de aloe-vera y vitamina E con función antioxidante",
+        "precio": 1084,
+        "stock":40,
+        "categorias": "Nutricion-general",
+        "thumbnail":"https://creoomnilife.zendesk.com/hc/article_attachments/360092358651/mceclip0.png",
+        "images": [
+          "https://creoomnilife.zendesk.com/hc/article_attachments/360092358651/mceclip0.png"
+        ]
+      },
+      {
+        "id": 7,
+        "title":"KENYAN",
+        "descripcion": "Suplemento alimenticio solido con glicina, colina y  vitaminas del complejo B para mejorar la concentración",
+        "precio":2003,
+        "stock":35,
+        "categorias": "Nutricion-general",
+        "thumbnail":"https://creoomnilife.zendesk.com/hc/article_attachments/360092358651/mceclip0.png",
+        "images": [
+          "https://creoomnilife.zendesk.com/hc/article_attachments/360092358651/mceclip0.png"
+        ]
+      },
+      {
+        "id": 7,
+        "title":"DUAL",
+        "descripcion": "Suplemento alimenticio solido con vitamina C para potenciar al sistema inmune",
+        "precio":1710,
+        "stock":32,
+        "categorias": "Vitaminas-y-minerales",
+        "thumbnail": "https://www.bing.com/images/search?view=detailV2&ccid=0wVBNWQD&id=597A40F13E8AB8D96D2986EC6843A781D503E312&thid=OIP.0wVBNWQDLpd7LHErQ1OBnQHaHa&mediaurl=https%3a%2f%2fwww.salud-vitavida.com%2fwp-content%2fuploads%2f2020%2f05%2fdual-c-mix-caja.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.d305413564032e977b2c712b4353819d%3frik%3dEuMD1YGnQ2jshg%26pid%3dImgRaw%26r%3d0&exph=600&expw=600&q=Dual+C+Mix+Omnilife&simid=608029642983352372&FORM=IRPRST&ck=D87B966A0C665BBF4704847145210DE2&selectedIndex=0&itb=0",
+        "images": [
+          "https://www.bing.com/images/search?view=detailV2&ccid=0wVBNWQD&id=597A40F13E8AB8D96D2986EC6843A781D503E312&thid=OIP.0wVBNWQDLpd7LHErQ1OBnQHaHa&mediaurl=https%3a%2f%2fwww.salud-vitavida.com%2fwp-content%2fuploads%2f2020%2f05%2fdual-c-mix-caja.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.d305413564032e977b2c712b4353819d%3frik%3dEuMD1YGnQ2jshg%26pid%3dImgRaw%26r%3d0&exph=600&expw=600&q=Dual+C+Mix+Omnilife&simid=608029642983352372&FORM=IRPRST&ck=D87B966A0C665BBF4704847145210DE2&selectedIndex=0&itb=0"
+        ]
+      },
+      {
+        "id": 8,
+        "title":"STARB",
+        "descripcion": "Suplemento alimenticio solido con vitaminas C, E, complejo B y Zn para potenciar al sistema nervioso central",
+        "precio":1710,
+        "stock":65,
+        "categorias": "Vitaminas-y-minerales",
+        "thumbnail":"https://portal.omnilife.com/productos/starbien-3020730",
+        "images": [
+          "https://portal.omnilife.com/productos/starbien-3020730"
+        ]
+      }
+
+
+]
