@@ -1,10 +1,10 @@
 import { StyleSheet, Text, View, TextInput, FlatList, Pressable } from 'react-native'
-import  { useEffect, useState } from 'react'
-import Header from "../Componentes/header"
-import Busqueda from "../Componentes/busqueda"
+
+import Header from '../Componentes/header'
+import Busqueda from '../Componentes/busqueda'
 import allProductos from "../Data/catalogo.json"
 import ProductoItem from "../Componentes/productoItem"
-
+import  { useEffect, useState } from 'react'
 
 
 const ItemListCategories = ({categoria}) => {
@@ -31,7 +31,7 @@ const ItemListCategories = ({categoria}) => {
        style={styles.container}
        data={productos}
        keyExtractor={item => item.id}
-       renderItem={({item})=> <ProductoItem item={item} /> } 
+       renderItem={({item}) => <ProductoItem item={item} />  } 
        />  
        </>
     )
