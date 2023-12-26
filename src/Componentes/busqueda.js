@@ -20,7 +20,7 @@ const Busqueda = ({setKeyword}) => {
         
     }
 
-    setKeyword(input)
+   
     const removeItem = () => {
         setInput("")
         setError("")

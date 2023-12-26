@@ -84,7 +84,7 @@
         ]
       },
       {
-        "id": 7,
+        "id": 8,
         "title":"DUAL",
         "descripcion": "Suplemento alimenticio solido con vitamina C para potenciar al sistema inmune",
         "precio":1710,
@@ -96,7 +96,7 @@
         ]
       },
       {
-        "id": 8,
+        "id": 9,
         "title":"STARB",
         "descripcion": "Suplemento alimenticio solido con vitaminas C, E, complejo B y Zn para potenciar al sistema nervioso central",
         "precio":1710,
