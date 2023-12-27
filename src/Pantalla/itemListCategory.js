@@ -12,7 +12,7 @@ const ItemListCategories = ({categoria}) => {
   const [productos, setProductos] = useState(allProductos)
 
  useEffect(() => { if(categoria){
-  const productosCategory = allProductos.filter(producto => producto.categoria === categoria)
+  const productosCategory = allProductos.filter(producto => producto.categorias === categoria)
   const productosFiltrados = productosCategory.filter(producto => producto.title.includes(keyword))
   setProductos(productosFiltrados)
 }else{
