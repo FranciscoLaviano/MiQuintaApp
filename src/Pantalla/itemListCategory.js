@@ -4,33 +4,30 @@ import Busqueda from '../Componentes/busqueda'
 import allProductos from "../Data/catalogo.json"
 import ProductoItem from "../Componentes/productoItem"
 import  { useEffect, useState } from 'react'
+import { useSelector } from 'react-redux'
 
 
-const ItemListCategories = ({categoria}) => {
-
+const ItemListCategories = ({navegacion, ruta}) => {
+  const productosFiltradosPorCategoria = useSelector(state => state.shop.value.productsFilteredByCategory)
   const [keyword,setKeyword] = useState("")
   const [productos, setProductos] = useState(allProductos)
 
- useEffect(() => { if(categoria){
-  const productosCategory = allProductos.filter(producto => producto.categorias === categoria)
-  const productosFiltrados = productosCategory.filter(producto => producto.title.includes(keyword))
+ useEffect(() => { 
+  const productosFiltrados = productosFiltradosPorCategoria.filter(producto => producto.title.includes(keyword))
   setProductos(productosFiltrados)
-}else{
-  const productosFiltrados = allProductos.filter(producto => producto.title.includes(keyword))
-  setProductos(productosFiltrados)
-}
-}, [keyword])
+
+}, [keyword, productosFiltradosPorCategoria])
 
 
     return (
       <>
-      <Header />
+      
       <Busqueda setKeyword={setKeyword} />
       <FlatList 
        style={styles.container}
        data={productos}
        keyExtractor={item => item.id}
-       renderItem={({item}) => <ProductoItem item={item} />  } 
+       renderItem={({item}) => <ProductoItem item={item} navegacion={navegacion} ruta={ruta} />  } 
        />  
        </>
     )
@@ -40,7 +37,12 @@ export default ItemListCategories;
 
 const styles = StyleSheet.create({
   container:{
-      width:"100%",
-     
+   width:"100%"
+  },
+  goBack:{
+   width:"100%",
+   backgroundColor:'#e2fc83',
+   padding:10,
+   paddingStart:40
   }
-})
+ })

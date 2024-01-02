@@ -1,8 +1,10 @@
 import { FlatList, StyleSheet } from "react-native";
-import categorias from "../Data/categorias.json";
+//import categorias from "../Data/categorias.json";
 import CategoryItem from "./categoryItem";
+import {useSelector} from 'react-redux'
 
-const Categorias = ({ setCategoriaElejida }) => {
+const Categorias = ({ navegacion, ruta }) => {
+  const categorias = useSelector((state) => state.shop.value.categorias)
   return (
     <FlatList
       style={styles.container}
@@ -10,8 +12,10 @@ const Categorias = ({ setCategoriaElejida }) => {
       keyExtractor={(item) => item}
       renderItem={({ item }) => (
         <CategoryItem
-          setCategoriaElejida={setCategoriaElejida}
+          
           categoria={item}
+          navegacion={navegacion}
+          ruta={ruta}
         />
       )}
     />

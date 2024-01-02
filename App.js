@@ -1,31 +1,29 @@
 
-import { StyleSheet,  View, Text } from 'react-native';
-import Home from "./src/Pantalla/home";
-import ItemListCategories from "./src/Pantalla/itemListCategory"
-import ItemDetail from "./src/Pantalla/itemdetail"
+import { StyleSheet, StatusBar } from 'react-native';
 import { useState } from 'react'
 import { useFonts } from "expo-font"
+import TabNavigator from './src/navegacion/TabNavigator';
+import { Provider } from 'react-redux';
+import {Fuentes, fonts} from "./src/design/Fuentes"
+import {store} from "./src/app/Store"
 
 
 
 
 const App = () => {
-
-   const [categoriaElejida, setCategoriaElejida] = useState("")
-   const [fontLoaded] = useFonts({
-    Josefin:require("./assets/Fonts/JosefinSans-Bold.ttf")
-   })
+   const [fontLoaded] = useFonts(Fuentes)
+   
   if(!fontLoaded) return null
 
   return (
-    <View style={styles.container}>
-      <Text>SUPLEMENTOS ALIMENTICIOS OMNILIFE</Text>
-      {categoriaElejida ? <ItemListCategories categoria={categoriaElejida} />
-      :
-      <Home setCategoriaElejida={setCategoriaElejida} />
-    }
-      
-    </View>
+    <>
+    <Text>SUPLEMENTOS ALIMENTICIOS OMNILIFE</Text>
+    <StatusBar backgroundColor={'#e2fc83'} />
+     <Provider store={store}>
+      <TabNavigator />
+     </Provider>
+    
+    </>
   );
 }
 
@@ -34,7 +32,7 @@ export default App;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '340636',
+    backgroundColor: '#fae8e8',
     alignItems: 'center',
     justifyContent: 'start',
   },

@@ -11,9 +11,9 @@ const Busqueda = ({setKeyword}) => {
     const [error,setError] = useState("")
 
     const Busqueda = () =>{
-        const expression = /.*[0-9].*/
+        const expression = " "
         if(expression.test(input)){
-           setError("no debe contener numeros")
+           setError("no se puede buscar datos vacios")
         }else{
             setKeyword(input)
         }

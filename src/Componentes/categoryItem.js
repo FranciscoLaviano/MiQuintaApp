@@ -1,13 +1,17 @@
 import { Pressable, StyleSheet, Text, View } from 'react-native'
 import CardShadow from '../Wrappers/Degradados'
+import {useDispatch} from 'react-redux'
+import { setProductsFilteredByCategory} from "./funciones/shop/shopSlice"
 
 
 
 
-
-const CategoryItem = ({categoria, setCategoriaElejida}) => {
+const CategoryItem = ({categoria, navegacion, ruta}) => {
+  const dispatch = useDispatch()
     return (
-      <Pressable onPress={()=>setCategoriaElejida(categoria)} >
+      <Pressable onPress={()=>{dispatch(setProductsFilteredByCategory(categoria))
+                              navegacion.navigate("Categorias", {categoria})
+      }}>
         <CardShadow style={styles.container}>
           <Text style={styles.text}>{categoria}</Text>
         </CardShadow>
