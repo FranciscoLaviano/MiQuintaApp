@@ -1,10 +1,10 @@
 
 import { StyleSheet, StatusBar } from 'react-native';
-import { useState } from 'react'
+
 import { useFonts } from "expo-font"
 import TabNavigator from './src/navegacion/TabNavigator';
 import { Provider } from 'react-redux';
-import {Fuentes, fonts} from "./src/design/Fuentes"
+import {Fuentes} from "./src/design/Fuentes"
 import {store} from "./src/app/Store"
 
 
