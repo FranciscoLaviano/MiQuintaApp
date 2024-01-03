@@ -9,7 +9,7 @@ const CartStack = () => {
 
     return (
         <Stack.Navigator
-            initialRouteName='Cart'
+            initialRouteName='Carro'
             screenOptions={
                 ({ruta})=>{
                     return {
@@ -18,7 +18,7 @@ const CartStack = () => {
                 }
             }
         >
-            <Stack.Screen name="Cart" component={Cart} />
+            <Stack.Screen name="Carro" component={Carro} />
         </Stack.Navigator>
       )
 }

@@ -9,7 +9,7 @@ const Stack = createNativeStackNavigator()
 const OrderStack = () => {
   return (
     <Stack.Navigator
-        initialRouteName='Orders'
+        initialRouteName='Ordernes'
         screenOptions={
             ({ruta})=>{
                 return {
@@ -18,7 +18,7 @@ const OrderStack = () => {
             }
         }
     >
-        <Stack.Screen name="Orders" component={Orders} />
+        <Stack.Screen name="Ordernes" component={Ordenes} />
     </Stack.Navigator>
   )
 }

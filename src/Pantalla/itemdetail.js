@@ -1,11 +1,11 @@
 import { StyleSheet, Text, View, Image, Pressable } from 'react-native'
-import React, {useEffect, useState} from 'react'
+import  {useEffect, useState} from 'react'
 import { useSelector } from 'react-redux'
 
 
 const ItemDetail = ({ruta}) => {
 
-    const producto = useSelector((state)=> state.shop.value.productSelected)
+    const producto = useSelector((state)=> state.shop.value.productoElejido)
     const images = producto.images ? producto.images : []
 
     return (
