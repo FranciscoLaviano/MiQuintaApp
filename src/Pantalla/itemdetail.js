@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View, Image, Pressable } from 'react-native'
-import  {useEffect, useState} from 'react'
+
 import { useSelector } from 'react-redux'
 
 

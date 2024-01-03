@@ -2,7 +2,7 @@ import React from 'react'
 import { StyleSheet } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import {Entypo} from "@expo/vector-icons"
+
 import OrderStack from './OrderStack'
 import ShopStack from './ShopStack'
 import CartStack from './CartStack'

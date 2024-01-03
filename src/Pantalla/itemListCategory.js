@@ -1,5 +1,5 @@
 import { StyleSheet, FlatList } from 'react-native'
-import Header from '../Componentes/header'
+
 import Busqueda from '../Componentes/busqueda'
 import allProductos from "../Data/catalogo.json"
 import ProductoItem from "../Componentes/productoItem"

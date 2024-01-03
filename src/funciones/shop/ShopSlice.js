@@ -1,7 +1,7 @@
 
 import { createSlice } from '@reduxjs/toolkit'
-import allProductos from "../../../Data/catalogo.json"
-import allCategories from "../../../Data/categorias.json"
+import allProductos from "../../Data/catalogo.json"
+import allCategories from "../../Data/categorias.json"
 
 const initialState = {
     value:{

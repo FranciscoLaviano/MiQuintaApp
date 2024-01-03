@@ -1,7 +1,7 @@
 import { Pressable, StyleSheet, Text } from 'react-native'
 import CardShadow from '../Wrappers/Degradados'
 import {useDispatch} from 'react-redux'
-import { setProductsFilteredByCategory} from "./funciones/shop/ShopSlice"
+import { setProductsFilteredByCategory} from "../funciones/shop/ShopSlice"
 
 
 
