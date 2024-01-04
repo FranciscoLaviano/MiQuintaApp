@@ -1,5 +1,5 @@
 
-import { StyleSheet, StatusBar } from 'react-native';
+import { StyleSheet, StatusBar, Text } from 'react-native';
 
 import { useFonts } from "expo-font"
 import TabNavigator from './src/navegacion/TabNavigator';
