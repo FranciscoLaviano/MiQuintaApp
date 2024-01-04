@@ -49,6 +49,6 @@ const styles = StyleSheet.create({
     },
     text:{
         color:"white",
-        fontFamily:"PlayFair"
+        fontFamily:"Joseffin"
     }
 })
