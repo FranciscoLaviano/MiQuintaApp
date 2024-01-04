@@ -7,7 +7,7 @@ const initialState = {
     value:{
         products: allProductos,
         categories:allCategories,
-        productSelected:{},
+        productoElejido:{},
         productsFilteredByCategory:[]
     }
   }

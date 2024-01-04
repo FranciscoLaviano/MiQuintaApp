@@ -15,14 +15,16 @@ const App = () => {
    
   if(!fontLoaded) return null
 
-  return (
+  return ( 
     <>
     <Text>SUPLEMENTOS ALIMENTICIOS OMNILIFE</Text>
     <StatusBar backgroundColor={'#e2fc83'} />
+    
      <Provider store={store}>
+     
       <TabNavigator />
      </Provider>
-    
+     
     </>
   );
 }
