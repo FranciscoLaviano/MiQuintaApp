@@ -6,7 +6,7 @@ import { setProductsFilteredByCategory} from "../funciones/shop/ShopSlice"
 
 
 
-const CategoryItem = ({categoria, navegacion, ruta}) => {
+const CategoryItem = ({categoria, navegacion, route}) => {
   const dispatch = useDispatch()
     return (
       <Pressable onPress={()=>{dispatch(setProductsFilteredByCategory(categoria))

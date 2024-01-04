@@ -2,7 +2,7 @@ import { StyleSheet, useWindowDimensions, Pressable, Text, Image } from 'react-n
 import { useDispatch } from 'react-redux';
 import {setProductoElejido} from '../funciones/shop/ShopSlice'
 
-const ProductoItem = ({item, navegacion, ruta}) => {
+const ProductoItem = ({item, navegacion, route}) => {
 
   const {width} = useWindowDimensions()
   const dispatch = useDispatch()

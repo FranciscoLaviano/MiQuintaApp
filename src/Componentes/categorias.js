@@ -3,7 +3,7 @@ import { FlatList, StyleSheet } from "react-native";
 import CategoryItem from "./categoryItem";
 import {useSelector} from 'react-redux'
 
-const Categorias = ({ navegacion, ruta }) => {
+const Categorias = ({ navegacion, route }) => {
   const categorias = useSelector((state) => state.shop.value.categorias)
   return (
     <FlatList
@@ -15,7 +15,7 @@ const Categorias = ({ navegacion, ruta }) => {
           
           categoria={item}
           navegacion={navegacion}
-          ruta={ruta}
+          route={route}
         />
       )}
     />

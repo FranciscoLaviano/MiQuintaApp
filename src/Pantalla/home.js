@@ -2,11 +2,11 @@ import { StyleSheet } from 'react-native'
 
 import Categorias from "../Componentes/categorias"
 
-const Home = ({navegacion, ruta}) => {
+const Home = ({navegacion, route}) => {
 
      return (
       <>
-       <Categorias navegacion={navegacion} ruta={ruta} />
+       <Categorias navegacion={navegacion} route={route} />
       </>
        
 

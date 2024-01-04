@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, Image, Pressable } from 'react-native'
 import { useSelector } from 'react-redux'
 
 
-const ItemDetail = ({ruta}) => {
+const ItemDetail = ({route}) => {
 
     const producto = useSelector((state)=> state.shop.value.productoElejido)
     const images = producto.images ? producto.images : []

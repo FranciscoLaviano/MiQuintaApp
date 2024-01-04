@@ -11,7 +11,7 @@ const OrderStack = () => {
     <Stack.Navigator
         initialRouteName='Ordernes'
         screenOptions={
-            ({ruta})=>{
+            ({route})=>{
                 return {
                     header : () => <Header title="Ordenes"/>
                 }
