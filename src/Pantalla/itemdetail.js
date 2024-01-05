@@ -12,16 +12,16 @@ const ItemDetail = ({route}) => {
         <View style={styles.container}>
         <View style={styles.content} >
             <Image
-              style={styles.image}
+              style={styles.thumbnail}
               source={{uri:images[2]}}
               resizeMode='cover's
             />
             <View style={styles.containerText}>
               <Text style={styles.title}>{producto.title}</Text>
-              <Text>{producto.description}</Text>
+              <Text>{producto.descripcion}</Text>
             </View>
             <View style={styles.containerPrice}>
-              <Text style={styles.price}>$ {producto.price}</Text>
+              <Text style={styles.price}>$ {producto.precio}</Text>
               <Pressable style={styles.buyNow}>
                 <Text style={styles.buyNowText}>Buy Now</Text>
               </Pressable>

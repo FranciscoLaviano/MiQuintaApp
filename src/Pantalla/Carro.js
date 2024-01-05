@@ -14,7 +14,7 @@ const Carro = () => {
 
     useEffect (() => {
 
-        const total = carro.reduce((acc, producto) => acc + (producto.price * producto.quantity), 0)
+        const total = carro.reduce((acc, producto) => acc + (producto.precio * producto.quantity), 0)
         setTotal(total)
     }, [carro])
   return (
