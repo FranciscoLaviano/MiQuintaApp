@@ -41,9 +41,20 @@ const styles = StyleSheet.create({
        justifyContent:"space-between",
        gap:30
    },
-   image:{
+   text:{
        width:"60%",
        textAlign:"center",
        fontSize:20
-   }
+   },
+   textMin:{
+      width:"60%",
+      textAlign:"center",
+      fontSize:15
+    },
+    image:{
+     minWidth:90,
+     height:90,
+     width:"30%"
+
+    }
 });
