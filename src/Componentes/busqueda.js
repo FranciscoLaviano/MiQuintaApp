@@ -10,7 +10,7 @@ const Busqueda = ({setKeyword}) => {
     const [input,setInput] = useState("")
     const [error,setError] = useState("")
 
-    const Busqueda = () =>{
+    const seach = () =>{
         const expression = " "
         if(expression.test(input)){
            setError("no se puede buscar datos vacios")
@@ -30,7 +30,7 @@ const Busqueda = ({setKeyword}) => {
     <View style={styles.container}>
          <View style={styles.containerInput}> 
             <TextInput style={styles.input} placeholder='Buscar producto' value={input} onChangeText={(t)=> setInput(t)}  />
-            <Pressable onPress={Busqueda}>
+            <Pressable onPress={seach}>
                 <AntDesign name='search1' color="black" size={25}/>
             </Pressable>
             <Pressable onPress={removeItem}>

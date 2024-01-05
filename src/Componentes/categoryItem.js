@@ -10,7 +10,7 @@ const CategoryItem = ({categoria, navegacion, route}) => {
   const dispatch = useDispatch()
     return (
       <Pressable onPress={()=>{dispatch(setProductsFilteredByCategory(categoria))
-                              navegacion.navigate("Categorias", {categoria})
+                              navegacion.navigate("Categoria", {categoria})
       }}>
         <CardShadow style={styles.container}>
           <Text style={styles.text}>{categoria}</Text>
