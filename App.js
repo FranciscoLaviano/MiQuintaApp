@@ -16,7 +16,7 @@ const App = () => {
 
   return ( 
     <>
-    <Text>SUPLEMENTOS ALIMENTICIOS OMNILIFE</Text>
+    <Text style={styles.text}>SUPLEMENTOS ALIMENTICIOS OMNILIFE</Text>
     <StatusBar backgroundColor={'#e2fc83'} />
     
      <Provider store={store}>
@@ -37,6 +37,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'start',
   },
+  text: {
+    color: "#16083D",
+    fontWeight: "bold",
+    alignItems: "center",
+    
+  }
   
 })
 
