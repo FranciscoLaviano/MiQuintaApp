@@ -6,7 +6,7 @@ import {Feather} from "@expo/vector-icons"
 
 const OrdenarTemas = ({orden}) => {
 
-    const total = orden.items .reduce((acc,producto) => acc + (producto.price  * producto.quantity), 0)
+    const total = orden.items .reduce((acc,producto) => acc + (producto.precio  * producto.quantity), 0)
   return (
    <View style={styles.container}> 
     <View style={styles.textContainer}>

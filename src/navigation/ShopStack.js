@@ -24,7 +24,7 @@ const ShopStack = () => {
     >
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Category" component={ItemListCategories} />
-        <Stack.Screen name="Product" component={ItemDetail} />
+        <Stack.Screen name="Producto" component={ItemDetail} />
     </Stack.Navigator>
   )
 }
