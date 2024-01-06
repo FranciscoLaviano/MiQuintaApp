@@ -5,8 +5,8 @@ import {Entypo} from "@expo/vector-icons"
 const TabIcon = ({icon, label, focused}) => {
   return (
     <View style={styles.container}>
-     <Entypo name={icon} size={40} color={focused ? "white" : "#EEE"} />
-     <Text style={{...styles.text, ...{color:focused ? "white" : "#EEE"}}}>{label}</Text>
+     <Entypo name={icon} size={40} color={focused ? "white" : "#243623"} />
+     <Text style={{...styles.text, ...{color:focused ? "white" : "#243623"}}}>{label}</Text>
 
     </View>
   )
