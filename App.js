@@ -1,8 +1,7 @@
 
 import { StyleSheet, StatusBar, Text } from 'react-native';
-
 import { useFonts } from "expo-font"
-import TabNavigator from './src/navegacion/TabNavigator';
+import TabNavigator from './src/navigation/TabNavigator';
 import { Provider } from 'react-redux';
 import {Fuentes} from "./src/design/Fuentes"
 import {store} from "./src/app/Store"
@@ -38,6 +37,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'start',
   },
+  
 })
 
 

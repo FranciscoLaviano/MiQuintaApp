@@ -5,12 +5,11 @@ import { setProductsFilteredByCategory} from "../features/shop/ShopSlice"
 
 
 
-
-const CategoryItem = ({categoria, navegacion, route}) => {
+const CategoryItem = ({categoria, navigation}) => {
   const dispatch = useDispatch()
     return (
       <Pressable onPress={()=>{dispatch(setProductsFilteredByCategory(categoria))
-                              navegacion.navigate("Categoria", {categoria})
+                              navigation.navigate("Category", {categoria})
       }}>
         <CardShadow style={styles.container}>
           <Text style={styles.text}>{categoria}</Text>
