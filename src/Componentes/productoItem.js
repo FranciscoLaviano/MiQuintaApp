@@ -2,7 +2,7 @@ import { StyleSheet, useWindowDimensions, Pressable, Text, Image } from 'react-n
 import { useDispatch } from 'react-redux';
 import {setProductoElejido} from '../features/shop/ShopSlice'
 
-const ProductoItem = ({item, navegacion, route}) => {
+const ProductoItem = ({item, navigation, route}) => {
 
   const {width} = useWindowDimensions()
   const dispatch = useDispatch()
@@ -10,7 +10,7 @@ const ProductoItem = ({item, navegacion, route}) => {
   return (
     <Pressable style={styles.container} onPress={() => { 
       dispatch(setProductoElejido(item.id))
-      navegacion.navigate("Producto", {id:item.id})
+      navigation.navigate("Producto", {id:item.id})
 
 
     }}>

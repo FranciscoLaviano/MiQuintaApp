@@ -19,7 +19,7 @@ export const ShopSlice = createSlice({
         setProductsFilteredByCategory: (state,actions) => {
             state.value.productsFilteredByCategory = state.value.products.filter(producto => producto.categorias == actions.payload)
         },
-        setProductoElejjido: (state,actions) =>{
+        setProductoElejido: (state,actions) =>{
             state.value.productoElejido = state.value.products.find(producto => producto.id ===actions.payload)
         }
     }

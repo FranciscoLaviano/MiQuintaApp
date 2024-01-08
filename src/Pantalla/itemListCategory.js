@@ -7,7 +7,7 @@ import  { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 
 
-const ItemListCategories = ({navegacion, route}) => {
+const ItemListCategories = ({navigation, route}) => {
   const productosFiltradosPorCategoria = useSelector(state => state.shop.value.productsFilteredByCategory)
   const [keyword,setKeyword] = useState("")
   const [productos, setProductos] = useState(allProductos)
@@ -27,7 +27,7 @@ const ItemListCategories = ({navegacion, route}) => {
        style={styles.container}
        data={productos}
        keyExtractor={item => item.id}
-       renderItem={({item}) => <ProductoItem item={item} navegacion={navegacion} route={route} />  } 
+       renderItem={({item}) => <ProductoItem item={item} navegacion={navigation} route={route} />  } 
        />  
        </>
     )
