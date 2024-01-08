@@ -27,7 +27,7 @@ const ItemListCategories = ({navigation, route}) => {
        style={styles.container}
        data={productos}
        keyExtractor={item => item.id}
-       renderItem={({item}) => <ProductoItem item={item} navegacion={navigation} route={route} />  } 
+       renderItem={({item}) => <ProductoItem item={item} navigation={navigation} route={route} />  } 
        />  
        </>
     )
